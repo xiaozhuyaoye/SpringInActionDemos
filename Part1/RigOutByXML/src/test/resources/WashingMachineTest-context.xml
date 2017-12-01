@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="washingMachine" class="entity.WashingMachine" />
+
+    <bean id="xiaoMing" class="entity.XiaoMing">
+        <constructor-arg name="machine" ref="washingMachine" />
+    </bean>
+
+    <!--<bean id="xiaoMing" class="entity.XiaoMing">
+        <constructor-arg index="0" ref="washingMachine" />
+    </bean>-->
+
+   <!-- <bean id="xiaoMing" class="entity.XiaoMing">
+        <property name="washingMachine" ref="washingMachine" />
+    </bean>-->
+
+    <!--<bean id="xiaoMing" class="entity.XiaoMing">
+        <property name="washingMachine" ref="washingMachine" />
+        <property name="str" value="Hello World" />
+        <property name="list">
+            <list>
+                <value>"a"</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="b" value="b" />
+                <entry key="c" value="c"/>
+            </map>
+        </property>
+        <property name="set">
+            <set>
+                <value>"d"</value>
+                <value>"e"</value>
+                <value>"f"</value>
+            </set>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="g">"g"</prop>
+                <prop key="h">"h"</prop>
+                <prop key="i">"i"</prop>
+                <prop key="j">"j"</prop>
+            </props>
+        </property>
+    </bean>-->
+</beans>
