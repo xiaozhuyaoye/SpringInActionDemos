@@ -11,6 +11,7 @@
     <modules>
         <module>Part1</module>
         <module>Part2</module>
+        <module>Part3</module>
     </modules>
 
     <dependencies>
@@ -51,5 +52,11 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.10</version>
+        </dependency>
     </dependencies>
 </project>
